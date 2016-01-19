@@ -11,8 +11,14 @@ namespace Olioteht9
         static void Main(string[] args)
         {
             int luku = 1;
-            Console.WriteLine("Anna luku ");
-            while
+            int summa = 0;
+            while (luku != 0)
+            {
+                Console.WriteLine("Anna Luku ");
+                luku = int.Parse(Console.ReadLine());
+                summa = luku + summa;
+            }
+            Console.WriteLine("Lukujen summa on " + summa);
         }
     }
 }
