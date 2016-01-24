@@ -24,7 +24,7 @@ namespace Olioteht13
             numbas[3] = int.Parse(Console.ReadLine());
             Console.WriteLine("Syötä pisteet ");
             numbas[4] = int.Parse(Console.ReadLine());
-            for (int x = 0; x == 4 ; x++)
+            for (int x = 0; x < 5 ; x++)
             {
                 if (numbas[i] <= numbas[j])
                 {
@@ -35,7 +35,7 @@ namespace Olioteht13
                     temp = numbas[i];
                     numbas[i] = numbas[j];
                     numbas[j] = temp;
-                    i++; j++; x--;
+                    i++; j = i--; x--;
                 }
                 Console.WriteLine("Kierros: " + x);
                 /*if (numbas[0] < numbas[1] && numbas[1] < numbas[2] && numbas[2] < numbas[3] && numbas[3] < numbas[4])
@@ -48,6 +48,12 @@ namespace Olioteht13
                 Console.WriteLine(numbas[k]);
             }*/
             Console.WriteLine(numbas[1] + numbas[2] + numbas[3]);
+            int tama = -1;
+            while (tama < 4)
+            {
+                tama++;
+                Console.WriteLine(numbas[tama]);
+            }
         }
     }
 }
