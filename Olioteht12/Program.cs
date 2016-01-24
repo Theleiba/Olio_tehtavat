@@ -10,7 +10,7 @@ namespace Olioteht12
     {
         static void Main(string[] args)
         {
-            int[] numbas = { 0 };
+            int[] numbas = new int[5];
             Console.WriteLine("Anna luku ");
             numbas[0] = int.Parse(Console.ReadLine());
             Console.WriteLine("Anna luku ");
@@ -21,6 +21,10 @@ namespace Olioteht12
             numbas[3] = int.Parse(Console.ReadLine());
             Console.WriteLine("Anna luku ");
             numbas[4] = int.Parse(Console.ReadLine());
+            for (int i = 4; i >= 0; i--)
+            {
+                Console.WriteLine(numbas[i]);
+            }
         }
     }
 }
